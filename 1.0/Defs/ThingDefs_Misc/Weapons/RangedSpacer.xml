@@ -49,10 +49,10 @@
 			<hasStandardCommand>true</hasStandardCommand>
 			<defaultProjectile>Bullet_ChargeRifle</defaultProjectile>
 			<warmupTime>1.0</warmupTime>
-			<range>23.9</range>
+			<range>24</range>
 			<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
 			<burstShotCount>5</burstShotCount>
-			<soundCast>HRACA_Shot_ChargeRifle</soundCast>
+			<soundCast>Shot_ChargeRifle</soundCast>
 			<soundCastTail>GunTail_Medium</soundCastTail>
 			<muzzleFlashScale>9</muzzleFlashScale>
 		</li>
@@ -77,99 +77,7 @@
 			</li>
 		</tools>
 	</ThingDef>
-	
-	<!-- ============================ Halo Carbine Rifle ========================== -->
 
-	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>HRACA_Gun_Charge_Carbine</defName>
-		<label>charge burst rifle</label>
-		<description>A charged-shot burst rifle for armor penetration. Each shot is charged with unstable energy as it leaves the barrel. Released on impact, the charged energy greatly increases the damage done.</description>
-		<techLevel>Spacer</techLevel>
-		<graphicData>
-			<texPath>Things/Item/Equipment/WeaponRanged/HRACA_carbine</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<soundInteract>Interact_ChargeRifle</soundInteract>
-		<thingCategories>
-			<li>HRACA_WeaponsRanged</li>
-		</thingCategories>
-		<statBases>
-			<WorkToMake>42000</WorkToMake>
-			<Mass>4.6</Mass>
-			<AccuracyTouch>0.65</AccuracyTouch>
-			<AccuracyShort>0.60</AccuracyShort>
-			<AccuracyMedium>0.45</AccuracyMedium>
-			<AccuracyLong>0.35</AccuracyLong>
-			<RangedWeapon_Cooldown>2.30</RangedWeapon_Cooldown>
-			</statBases>
-		<recipeMaker>
-			<researchPrerequisite>HRACA_ChargeAuxiliary</researchPrerequisite>
-			<skillRequirements>
-				<Crafting>12</Crafting>
-			</skillRequirements>
-			<recipeUsers Inherit="False">
-				<li>FabricationBench</li>
-			</recipeUsers>
-		</recipeMaker>
-		<costList>
-			<Plasteel>45</Plasteel>
-			<Steel>15</Steel>
-			<ComponentSpacer>2</ComponentSpacer>
-		</costList>
-		<weaponTags>
-			<li>SpacerGun</li>
-			<li>HRACAGun</li>
-		</weaponTags>
-		<verbs>
-			<li>
-				<verbClass>Verb_Shoot</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>HRACA_Bullet_ChargeCarbine</defaultProjectile>
-				<warmupTime>1.0</warmupTime>
-				<range>20.9</range>
-				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-				<burstShotCount>3</burstShotCount>
-				<soundCast>HRACA_Shot_ChargeCarbine</soundCast>
-				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>9</muzzleFlashScale>
-			</li>
-		</verbs>
-		<tools>
-			<li>
-				<label>stock</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-			<li>
-				<label>barrel</label>
-				<capacities>
-					<li>Blunt</li>
-					<li>Poke</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-		</tools>
-	</ThingDef>
-	
-	<ThingDef ParentName="BaseBullet">
-		<defName>HRACA_Bullet_ChargeCarbine</defName>
-		<label>charge shot</label>
-		<graphicData>
-		<texPath>Things/Projectile/Charge_Small</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<projectile>
-			<damageDef>Bullet</damageDef>
-		<damageAmountBase>10</damageAmountBase>
-		<armorPenetrationBase>0.65</armorPenetrationBase>
-		<speed>70</speed>
-		</projectile>
-	</ThingDef>
-  
 	<!-- ============================ Halo SMG ========================== -->
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
@@ -218,10 +126,10 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>HRACA_Bullet_ChargeSMG</defaultProjectile>
 				<warmupTime>1.0</warmupTime>
-				<range>23.9</range>
+				<range>24</range>
 				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
 				<burstShotCount>4</burstShotCount>
-				<soundCast>HRACA_Shot_Charge_SMG</soundCast>
+				<soundCast>Shot_ChargeRifle</soundCast>
 				<soundCastTail>GunTail_Light</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
@@ -267,108 +175,6 @@
 		<damageAmountBase>12</damageAmountBase>
 		<armorPenetrationBase>0.35</armorPenetrationBase>
 		<speed>70</speed>
-		</projectile>
-	</ThingDef>
-	
-	<!-- ============================ Halo BR ========================== -->
-
-	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>HRACA_Gun_Charge_BR</defName>
-		<label>charge battle rifle</label>
-		<description>A three shot burst, long ranged, charged-shot battle rifle. Perfect for use against armored targets at mid range. Each shot is charged with unstable energy as it leaves the barrel. Released on impact, the charged energy greatly increases the damage done.</description>
-		<techLevel>Spacer</techLevel>
-		<graphicData>
-			<texPath>Things/Item/Equipment/WeaponRanged/HRACA_br</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<soundInteract>Interact_ChargeRifle</soundInteract>
-		<thingCategories>
-			<li>HRACA_WeaponsRanged</li>
-		</thingCategories>
-		<statBases>
-			<WorkToMake>44000</WorkToMake>
-			<Mass>3.8</Mass>
-			<AccuracyTouch>0.64</AccuracyTouch>
-			<AccuracyShort>0.65</AccuracyShort>
-			<AccuracyMedium>0.71</AccuracyMedium>
-			<AccuracyLong>0.67</AccuracyLong>
-			<RangedWeapon_Cooldown>1.20</RangedWeapon_Cooldown>
-		</statBases>
-		<recipeMaker>
-			<researchPrerequisite>HRACA_ChargeAuxiliary</researchPrerequisite>
-			<skillRequirements>
-				<Crafting>8</Crafting>
-			</skillRequirements>
-			<recipeUsers Inherit="False">
-				<li>FabricationBench</li>
-			</recipeUsers>
-		</recipeMaker>
-		<costList>
-			<Plasteel>60</Plasteel>
-			<Steel>20</Steel>
-			<ComponentSpacer>2</ComponentSpacer>
-		</costList>
-		<weaponTags>
-			<li>SpacerGun</li>
-			<li>HRACAGun</li>
-		</weaponTags>
-		<verbs>
-			<li>
-				<verbClass>Verb_Shoot</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>HRACA_Bullet_ChargeBR</defaultProjectile>
-				<warmupTime>1.1</warmupTime>
-				<range>33.9</range>
-				<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
-				<burstShotCount>3</burstShotCount>
-				<soundCast>HRACA_Shot_Charge_BR</soundCast>
-				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>9</muzzleFlashScale>
-			</li>
-		</verbs>
-		<tools>
-			<li>
-				<label>stock</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-			<li>
-				<label>barrel</label>
-				<capacities>
-					<li>Blunt</li>
-					<li>Poke</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-			<li>
-				<label>grip</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>7</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-		</tools>
-	</ThingDef>
-	
-	<ThingDef ParentName="BaseBullet">
-		<defName>HRACA_Bullet_ChargeBR</defName>
-		<label>charge shot</label>
-		<graphicData>
-			<texPath>Things/Projectile/Charge_Small</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.1</drawSize>
-		</graphicData>
-		<projectile>
-		<damageDef>Bullet</damageDef>
-		<damageAmountBase>10</damageAmountBase>
-		<armorPenetrationBase>0.32</armorPenetrationBase>
-		<speed>65</speed>
-		<stoppingPower>1.4</stoppingPower>
 		</projectile>
 	</ThingDef>
   
@@ -423,7 +229,7 @@
 				<range>31.9</range>
 				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
 				<burstShotCount>1</burstShotCount>
-				<soundCast>HRACA_Shot_Charge_DMR</soundCast>
+				<soundCast>Shot_ChargeRifle</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
@@ -526,7 +332,7 @@
 				<range>49.9</range>
 				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
 				<burstShotCount>1</burstShotCount>
-				<soundCast>HRACA_Shot_Charge_Sniper</soundCast>
+				<soundCast>HRACA_Shot_ChargeSniper</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>12</muzzleFlashScale>
 			</li>
@@ -628,7 +434,7 @@
 				<range>18.9</range>
 				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
 				<burstShotCount>1</burstShotCount>
-				<soundCast>HRACA_Shot_Charge_Shotgun</soundCast>
+				<soundCast>HRACA_Shot_ChargeShotgun</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>7</muzzleFlashScale>
 			</li>
@@ -665,107 +471,6 @@
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>46</damageAmountBase>
 			<armorPenetrationBase>0.4</armorPenetrationBase>
-			<speed>55</speed>
-		</projectile>
-	</ThingDef>
-	
-	<!-- ============================ Halo SAW ========================== -->
-	
-	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>HRACA_Gun_Charge_SAW</defName>
-		<label>charge machine gun</label>
-		<description>A deadly, charged-shot lmg. It sacrifices range and accuracy for shooting a lot of bullets at close range. Each shot is charged with unstable energy as it leaves the barrel. Released on impact, the charged energy greatly increases the damage done.</description>
-		<techLevel>Spacer</techLevel>
-		<graphicData>
-			<texPath>Things/Item/Equipment/WeaponRanged/HRACA_saw</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<soundInteract>Interact_ChargeRifle</soundInteract>
-		<thingCategories>
-			<li>HRACA_WeaponsRanged</li>
-		</thingCategories>
-		<statBases>
-			<WorkToMake>56000</WorkToMake>
-			<Mass>5.2</Mass>
-			<AccuracyTouch>0.85</AccuracyTouch>
-			<AccuracyShort>0.70</AccuracyShort>
-			<AccuracyMedium>0.35</AccuracyMedium>
-			<AccuracyLong>0.25</AccuracyLong>
-			<RangedWeapon_Cooldown>2.30</RangedWeapon_Cooldown>
-		</statBases>
-		<equippedAngleOffset>45</equippedAngleOffset>
-		<recipeMaker>
-			<researchPrerequisite>HRACA_ChargeAuxiliary</researchPrerequisite>
-			<skillRequirements>
-				<Crafting>12</Crafting>
-			</skillRequirements>
-			<recipeUsers Inherit="False">
-				<li>FabricationBench</li>
-			</recipeUsers>
-		</recipeMaker>
-		<costList>
-			<Plasteel>75</Plasteel>
-			<Steel>25</Steel>
-			<ComponentSpacer>3</ComponentSpacer>
-		</costList>
-		<weaponTags>
-			<li>GunHeavy</li>
-			<li>HRACAGun</li>
-		</weaponTags>
-		<verbs>
-			<li>
-				<verbClass>Verb_Shoot</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>HRACA_Bullet_ChargeSAW</defaultProjectile>
-				<warmupTime>2.0</warmupTime>
-				<range>23.9</range>
-				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-				<burstShotCount>8</burstShotCount>
-				<soundCast>HRACA_Shot_Charge_LMG</soundCast>
-				<soundCastTail>GunTail_Heavy</soundCastTail>
-				<muzzleFlashScale>7</muzzleFlashScale>
-			</li>
-		</verbs>
-		<tools>
-			<li>
-				<label>stock</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-			<li>
-				<label>barrel</label>
-				<capacities>
-					<li>Blunt</li>
-					<li>Poke</li>
-				</capacities>
-				<power>12</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-			<li>
-				<label>drum</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>3</cooldownTime>
-			</li>
-		</tools>
-	</ThingDef>
-	
-	<ThingDef ParentName="BaseBullet">
-		<defName>HRACA_Bullet_ChargeSAW</defName>
-		<label>charge shot</label>
-		<graphicData>
-			<texPath>Things/Projectile/Charge_Small</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<projectile>
-			<damageDef>Bullet</damageDef>
-			<damageAmountBase>8</damageAmountBase>
-			<armorPenetrationBase>0.5</armorPenetrationBase>
 			<speed>55</speed>
 		</projectile>
 	</ThingDef>
@@ -828,7 +533,7 @@
 				<range>30.9</range>
 				<ticksBetweenBurstShots>22</ticksBetweenBurstShots>
 				<burstShotCount>2</burstShotCount>
-				<soundCast>HRACA_Shot_Charge_Launcher</soundCast>
+				<soundCast>InfernoCannon_Fire</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<onlyManualCast>true</onlyManualCast>
 				<stopBurstWithoutLos>false</stopBurstWithoutLos>
@@ -1001,7 +706,7 @@
 			<range>25.9</range>
 			<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
 			<burstShotCount>3</burstShotCount>
-			<soundCast>HRACA_Shot_Charge_Pistol</soundCast>
+			<soundCast>Shot_ChargeRifle</soundCast>
 			<soundCastTail>GunTail_Medium</soundCastTail>
 			<muzzleFlashScale>6</muzzleFlashScale>
 		</li>
@@ -1052,12 +757,101 @@
 			<range>27.9</range>
 			<ticksBetweenBurstShots>16</ticksBetweenBurstShots>
 			<burstShotCount>1</burstShotCount>
-			<soundCast>HRACA_Shot_Charge_Magnum</soundCast>
+			<soundCast>Shot_ChargeRifle</soundCast>
 			<soundCastTail>GunTail_Medium</soundCastTail>
 			<muzzleFlashScale>7</muzzleFlashScale>
 		</li>
 		</verbs>
 	</ThingDef>
   
+    <!-- ============================ Halo Grenade Launcher ========================== -->
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>HRACA_EmpLauncher</defName>
+		<label>EMP grenade launcher</label>
+		<description>A short-barreled EMP shell launcher. The shell will upon impact release a burst of electromagnetic energy, stunning mechanical targets (mechanoids, turrets, mortars) and depleting shields in the area of effect.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/HRACA_grenade_launcher_emp</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<generateCommonality>0.3</generateCommonality>
+		<weaponTags>
+            <li>SpacerGun</li>
+            <li>HRACAGun</li>
+			<li>GrenadeEMP</li>
+		</weaponTags>
+		<statBases>
+			<WorkToMake>30000</WorkToMake>
+			<Mass>2.5</Mass>
+			<RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+            <Plasteel>15</Plasteel>
+			<Steel>55</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+            <researchPrerequisite>MicroelectronicsBasics</researchPrerequisite>
+		</recipeMaker>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>HRACA_Bullet_EMPLauncher</defaultProjectile>
+				<warmupTime>2.5</warmupTime>
+				<range>20</range>
+				<forcedMissRadius>2.4</forcedMissRadius>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>Shot_IncendiaryLauncher</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>HRACA_Bullet_EMPLauncher</defName>
+		<label>EMP launcher shell</label>
+		<graphicData>
+			<texPath>Things/Projectile/LauncherShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<color>(68,150,215)</color>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<speed>50</speed>
+			<damageDef>EMP</damageDef>
+			<!-- Use default damage from explosion def -->
+			<explosionRadius>0.8</explosionRadius>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+		</projectile>
+	</ThingDef>
 
 </Defs>

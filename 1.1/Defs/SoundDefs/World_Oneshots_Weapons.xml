@@ -1,179 +1,71 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Defs>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
 
-  <SoundDef>
-    <defName>HRACA_Shot_ChargeRifle</defName>  
-    <context>MapOnly</context>
-    <eventNames />  
-    <maxSimultaneous>1</maxSimultaneous>  
-    <subSounds>
-      <li>
-        <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Weapon/HRACA_ar</clipFolderPath>
-          </li>
-        </grains>
-      </li>
-    </subSounds>
-  </SoundDef>
-  
-  <SoundDef>
-    <defName>HRACA_Shot_ChargeCarbine</defName>  
-    <context>MapOnly</context>
-    <eventNames />  
-    <maxSimultaneous>1</maxSimultaneous>  
-    <subSounds>
-      <li>
-        <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Weapon/HRACA_carbine</clipFolderPath>
-          </li>
-        </grains>
-      </li>
-    </subSounds>
-  </SoundDef>
-  
-  <SoundDef>
-    <defName>HRACA_Shot_Charge_BR</defName>  
-    <context>MapOnly</context>
-    <eventNames />  
-    <maxSimultaneous>1</maxSimultaneous>  
-    <subSounds>
-      <li>
-        <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Weapon/HRACA_br</clipFolderPath>
-          </li>
-        </grains>
-      </li>
-    </subSounds>
-  </SoundDef>
-  
-  <SoundDef>
-    <defName>HRACA_Shot_Charge_DMR</defName>  
-    <context>MapOnly</context>
-    <eventNames />  
-    <maxSimultaneous>1</maxSimultaneous>  
-    <subSounds>
-      <li>
-        <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Weapon/HRACA_drm</clipFolderPath>
-          </li>
-        </grains>
-      </li>
-    </subSounds>
-  </SoundDef>
+    <!-- ============================ Charge Weapons Generic ========================== -->
+	
+    <SoundDef>
+        <defName>HRACA_Shot_ChargeShotgun</defName>
+        <context>MapOnly</context>
+        <eventNames />
+        <maxSimultaneous>3</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Folder">
+                        <clipFolderPath>Weapon/HRACA_ChargeShotgun_Shot</clipFolderPath>
+                    </li>
+                </grains>
+            </li>
+        </subSounds>
+    </SoundDef>
 
-  <SoundDef>
-    <defName>HRACA_Shot_Charge_Sniper</defName>  
-    <context>MapOnly</context>
-    <eventNames />  
-    <maxSimultaneous>1</maxSimultaneous>  
-    <subSounds>
-      <li>
-        <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Weapon/HRACA_sniper</clipFolderPath>
-          </li>
-        </grains>
-      </li>
-    </subSounds>
-  </SoundDef>
-  
+    <SoundDef>
+        <defName>HRACA_Shot_ChargeSniper</defName>
+        <context>MapOnly</context>
+        <eventNames />
+        <maxSimultaneous>3</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Folder">
+                        <clipFolderPath>Weapon/HRACA_ChargeSniper_Shot</clipFolderPath>
+                    </li>
+                </grains>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <!-- ============================ Plasma Weapons Generic ========================== -->
+
 	<SoundDef>
-    <defName>HRACA_Shot_Charge_Shotgun</defName>  
-    <context>MapOnly</context>
-    <eventNames />  
-    <maxSimultaneous>1</maxSimultaneous>  
-    <subSounds>
-      <li>
-        <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Weapon/HRACA_shotgun</clipFolderPath>
-          </li>
-        </grains>
-      </li>
-    </subSounds>
-  </SoundDef>
-  
-  <SoundDef>
-    <defName>HRACA_Shot_Charge_SMG</defName>  
-    <context>MapOnly</context>
-    <eventNames />  
-    <maxSimultaneous>1</maxSimultaneous>  
-    <subSounds>
-      <li>
-        <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Weapon/HRACA_smg</clipFolderPath>
-          </li>
-        </grains>
-      </li>
-    </subSounds>
-  </SoundDef>
-  
-  <SoundDef>
-    <defName>HRACA_Shot_Charge_Launcher</defName>  
-    <context>MapOnly</context>
-    <eventNames />  
-    <maxSimultaneous>1</maxSimultaneous>  
-    <subSounds>
-      <li>
-        <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Weapon/HRACA_launcher</clipFolderPath>
-          </li>
-        </grains>
-      </li>
-    </subSounds>
-  </SoundDef>
-  
-  <SoundDef>
-    <defName>HRACA_Shot_Charge_Pistol</defName>  
-    <context>MapOnly</context>
-    <eventNames />  
-    <maxSimultaneous>1</maxSimultaneous>  
-    <subSounds>
-      <li>
-        <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Weapon/HRACA_pistol</clipFolderPath>
-          </li>
-        </grains>
-      </li>
-    </subSounds>
-  </SoundDef>
-  
-  <SoundDef>
-    <defName>HRACA_Shot_Charge_Magnum</defName>  
-    <context>MapOnly</context>
-    <eventNames />  
-    <maxSimultaneous>1</maxSimultaneous>  
-    <subSounds>
-      <li>
-        <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Weapon/HRACA_magnum</clipFolderPath>
-          </li>
-        </grains>
-      </li>
-    </subSounds>
-  </SoundDef>
-  
-  <SoundDef>
-    <defName>HRACA_Shot_Charge_LMG</defName>  
-    <context>MapOnly</context>
-    <eventNames />  
-    <maxSimultaneous>1</maxSimultaneous>  
-    <subSounds>
-      <li>
-        <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Weapon/HRACA_lmg</clipFolderPath>
-          </li>
-        </grains>
-      </li>
-    </subSounds>
-  </SoundDef>
-  
+		<defName>HRACA_Interact_PlasmaRifle</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>UI/WeaponHandling/HRACA_HandleWeaponPlasma</clipPath>
+					</li>
+				</grains>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+    <SoundDef>
+        <defName>HRACA_Shot_Plasma</defName>
+        <context>MapOnly</context>
+        <eventNames />
+        <maxSimultaneous>3</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Folder">
+                        <clipFolderPath>Weapon/HRACA_Plasma_Shot</clipFolderPath>
+                    </li>
+                </grains>
+            </li>
+        </subSounds>
+    </SoundDef>
+
 </Defs>

@@ -3,8 +3,8 @@
 
 	<ResearchProjectDef>
 		<defName>HRACA_ChargeAuxiliary</defName>
-		<label>charge auxiliary</label>
-		<description>Build even more pulse charge weapons to expand your armory. Note that these also require advanced components.</description>
+		<label>combat auxiliary</label>
+		<description>Build even more complex charge weapons to expand your armory. Note that these also require advanced components.</description>
 		<baseCost>3000</baseCost>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
