@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Manifest>
+    <identifier>Halo: Rimworld Auxiliary Charge Armory</identifier>
+    <version>1.2</version>
+	<loadAfter>
+		<li>ProperShotguns</li>
+	</loadAfter>
+</Manifest>
